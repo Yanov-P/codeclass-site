@@ -332,3 +332,13 @@ textarea:focus-visible{
 .form .intro__button{
     margin-top: 50px;
 }
+
+.footer{
+    height: 150px;
+    background: var(--background);
+}
+
+.footer .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
