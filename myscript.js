@@ -1,21 +1,36 @@
-let title = document.getElementById("myTitle")
 let button = document.getElementById("myButton")
-let logo = document.getElementById("myLogo")
+let modal = document.getElementById("modal")
 
 button.onclick = function(){
-    title.style.color = "red"
+    button.style.marginLeft = "100px"
+    button.style.background = "red"
+
+    button.style.borderRadius = "50px"
+
+    setTimeout(() => {
+        modal.style.display = "flex"
+    }, 1000);
+    setTimeout(() => {
+        modal.style.opacity = 1
+    }, 1100);
 }
 
-title.onclick = function(){
-    title.style.color = "black"
-}
+modal.onclick = function(event){
+    
+    button.style.borderRadius = ""
+    
+    if(event.target == modal){
 
-logo.onmouseenter = function(){
-    logo.style.fontSize = "60px"
-} 
+        button.style.marginLeft = ""
+        button.style.background = ""
 
-logo.onmouseleave = function(){
-    logo.style.fontSize = ""
+        modal.style.opacity = 0
+
+        setTimeout(() => {
+            modal.style.display = "none"
+        }, 1000);
+
+    }
 }
 
 
