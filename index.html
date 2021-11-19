@@ -16,11 +16,11 @@
                 </div>
     
                 <nav class="header-menu">
-                    <a href="index.html">ГЛАВНАЯ</a>
-                    <a href="index.html">ОБ АВТОРЕ</a>
-                    <a href="index.html">РАБОТЫ</a>
-                    <a href="index.html">ПРОЦЕССЫ</a>
-                    <a href="index.html">КОНТАКТЫ</a>
+                    <a href="./about.html">ГЛАВНАЯ</a>
+                    <a href="#about">ОБ АВТОРЕ</a>
+                    <a href="#projects">РАБОТЫ</a>
+                    <a href="#skills">ПРОЦЕССЫ</a>
+                    <a href="#contacts">КОНТАКТЫ</a>
                 </nav>
             </div>
         </header>
@@ -28,7 +28,7 @@
         <main>
             <div class="top-background"></div>
             <div class="wrapper">
-                <section class="intro">
+                <section class="intro" id="intro">
                     <img src="./intro_logo.svg" alt="Logo">
                     <div class="intro__content">
                         <div id="myTitle" class="intro__header">Дизайн и верстка</div>
@@ -38,12 +38,12 @@
                         <div id="myButton" class="intro__button">НАПИСАТЬ МНЕ</div>
                     </div>
                 </section>
-                <section class="about">
+                <section class="about" id="about">
                     <h2>Обо мне</h2>
                     <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
                 </section>
             </div>
-            <section class="projects">
+            <section class="projects" id="projects">
                 <div class="projects__wrapper">
                     <img src="./projects-item.svg">
                     <img src="./projects-item.svg">
@@ -54,7 +54,7 @@
                 </div>
             </section>
             <div class="wrapper">
-                <section class="skills">
+                <section class="skills" id="skills">
                     <div class="skills__left">
                         <h2>Мои навыки</h2>
                         <div class="skills__skill-name">Adobe Photoshop</div>
@@ -113,17 +113,22 @@
                     <div class="intro__button">ОТПРАВИТЬ</div>
                 </section>
             </div>
-            <section class="footer">
-                <div class="wrapper">
-                    <div class="footer__left">
-                        FFF
-                    </div>
-                    <div class="footer__right">
-                        SSSS
-                    </div>
-                </div>
-            </section>
         </main>
+        
+        <footer id="contacts">
+            <div class="wrapper">
+                <div class="footer__left">
+                    <h3>Михаил Александрович</h3>
+                    <div class="footer__rights">(с) 2018. Все права защищены.</div>
+                </div>
+                <div class="footer__right">
+                    <img src="vk.svg">
+                    <img src="vk.svg">
+                    <img src="vk.svg">
+                </div>
+            </div>
+        </footer>
+
         <script src="myscript.js"></script>
     </body>
 
